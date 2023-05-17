@@ -3,6 +3,16 @@ GIT Workshop
 
 
 # Git Cheat Sheet
+
+## Configuration
+```
+git config --global user.name "Mario Rossi"
+git config --global user.email mario.rossi@domain.com
+git config --global color.ui true
+git config --global push.default current
+git config --global core.editor vim
+git config --global diff.tool meld
+```
 ## Creating Repositories
 ```
 # create new repository in current directory
@@ -10,6 +20,7 @@ git init
 
 # clone a remote repository
 git clone [url]
+
 # for example cloning the entire jquery repo locally
 git clone https://github.com/jquery/jquery
 ```
@@ -26,6 +37,7 @@ git branch [new-branch]
 
 # Create a new tracking branch based on a remote branch
 git checkout --track [remote/branch]
+
 # for example track the remote branch named feature-branch-foo
 git checkout --track origin/feature-branch-foo
 
@@ -45,6 +57,7 @@ git diff
 
 # View changes between staged files and the latest committed version
 git diff --cached
+
 # only one file add the file name
 git diff --cached [file]
 
@@ -55,7 +68,6 @@ git add [file]
 git rm [file]
 
 # Add some changes in < file> to the next commit
-# Watch these video's for a demo of the power of git add -p - http://johnkary.net/blog/git-add-p-the-most-powerful-git-feature-youre-not-using-yet/
 git add -p [file]
 
 # Commit all local changes in tracked  files
@@ -67,7 +79,6 @@ git commit
 git commit -m "An inline commit message"
 
 # Unstages the file, but preserve its contents
-
 git reset [file]
 ```
 ## Commit History
@@ -103,7 +114,9 @@ git branch -dr [remote/branch]
 
 # Publish your tags to a remote
 git push --tags
-Merge & Rebase
+```
+## Merge & Rebase
+```
 # Merge [branch] into your current HEAD 
 git merge [branch]
 
@@ -143,4 +156,3 @@ git reset [commit]
 #  Reset your current branch to a previous commit and preserve staged local changes 
 git reset --keep [commit]
 ```
-
