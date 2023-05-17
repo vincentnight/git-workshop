@@ -3,7 +3,7 @@ GIT Workshop
 
 
 # Git Cheat Sheet
-##Creating Repositories
+## Creating Repositories
 ```
 # create new repository in current directory
 git init
@@ -13,7 +13,7 @@ git clone [url]
 # for example cloning the entire jquery repo locally
 git clone https://github.com/jquery/jquery
 ```
-##Branches and Tags
+## Branches and Tags
 ```
 # List all existing branches with the latest commit comment 
 git branch –av
@@ -35,7 +35,7 @@ git branch -d [branch]
 # Tag the current commit
 git tag [tag-name]
 ```
-##Local Changes
+## Local Changes
 ```
 # List all new or modified files - showing which are to staged to be commited and which are not 
 git status
@@ -70,7 +70,7 @@ git commit -m "An inline commit message"
 
 git reset [file]
 ```
-##Commit History
+## Commit History
 ```
 # Show all commits, starting from the latest 
 git log 
@@ -81,7 +81,7 @@ git log -p [file]
 # Show who changed each line in a file, when it was changed and the commit id
 git blame -c [file]
 ```
-##Update and Publish
+## Update and Publish
 ```
 # List all remotes 
 git remote -v
@@ -123,7 +123,7 @@ git mergetool
 git add <resolved- file>
 git rm <resolved- file>
 ```
-##Undo
+## Undo
 ```
 # Discard all local changes and start working on the current branch from the last commit
 git reset --hard HEAD
