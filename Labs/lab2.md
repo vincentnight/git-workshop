@@ -1,5 +1,5 @@
 ## Lab2: Remote Repo
-### Pre requirements: GitHub Account)
+### Pre requirements: GitHub Account
 
 - Connect to GitHub: ([https://github.com](https://github.com))
 - Fork https://github.com/congiuluc/git-workshop.git
