@@ -1,7 +1,7 @@
 ## Lab1: Your first commit
 
-- Create a new folder exercise1
-- Initialize local git repository
+- Create a new folder **lab1**
+- Initialize local git repository into **lab1** folder
 - Config global git user name
 - Config global git user email
 - Create a new file hello.txt
